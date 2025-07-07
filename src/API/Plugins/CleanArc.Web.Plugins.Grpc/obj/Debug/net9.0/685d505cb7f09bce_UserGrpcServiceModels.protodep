@@ -1,0 +1,2 @@
+obj/Debug/net9.0/ProtoModels/UserGrpcServiceModels.cs \
+obj/Debug/net9.0/ProtoModels/UserGrpcServiceModelsGrpc.cs: ProtoModels/UserGrpcServiceModels.proto

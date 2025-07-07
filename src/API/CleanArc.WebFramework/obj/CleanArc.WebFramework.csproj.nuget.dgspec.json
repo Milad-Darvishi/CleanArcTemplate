@@ -1,0 +1,602 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/API/CleanArc.WebFramework/CleanArc.WebFramework.csproj": {}
+  },
+  "projects": {
+    "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/API/CleanArc.WebFramework/CleanArc.WebFramework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/API/CleanArc.WebFramework/CleanArc.WebFramework.csproj",
+        "projectName": "CleanArc.WebFramework",
+        "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/API/CleanArc.WebFramework/CleanArc.WebFramework.csproj",
+        "packagesPath": "/Users/miladdarvishi/.nuget/packages/",
+        "outputPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/API/CleanArc.WebFramework/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/miladdarvishi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Application/CleanArc.Application.csproj": {
+                "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Application/CleanArc.Application.csproj"
+              },
+              "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.CrossCutting/CleanArc.Infrastructure.CrossCutting.csproj": {
+                "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.CrossCutting/CleanArc.Infrastructure.CrossCutting.csproj"
+              },
+              "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.Identity/CleanArc.Infrastructure.Identity.csproj": {
+                "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.Identity/CleanArc.Infrastructure.Identity.csproj"
+              },
+              "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.Persistence/CleanArc.Infrastructure.Persistence.csproj": {
+                "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.Persistence/CleanArc.Infrastructure.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Asp.Versioning.Http": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Asp.Versioning.Mvc": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "Asp.Versioning.Mvc.ApiExplorer": {
+              "target": "Package",
+              "version": "[8.1.0, )"
+            },
+            "NSwag.AspNetCore": {
+              "target": "Package",
+              "version": "[14.1.0, )"
+            },
+            "NuGet.Packaging": {
+              "target": "Package",
+              "version": "[6.12.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/miladdarvishi/.dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Application/CleanArc.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Application/CleanArc.Application.csproj",
+        "projectName": "CleanArc.Application",
+        "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Application/CleanArc.Application.csproj",
+        "packagesPath": "/Users/miladdarvishi/.nuget/packages/",
+        "outputPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/miladdarvishi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Domain/CleanArc.Domain.csproj": {
+                "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Domain/CleanArc.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Mediator.Abstractions": {
+              "target": "Package",
+              "version": "[2.1.7, )"
+            },
+            "Mediator.SourceGenerator": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.7, )"
+            },
+            "System.Linq.Async": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/miladdarvishi/.dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Domain/CleanArc.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Domain/CleanArc.Domain.csproj",
+        "projectName": "CleanArc.Domain",
+        "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Domain/CleanArc.Domain.csproj",
+        "packagesPath": "/Users/miladdarvishi/.nuget/packages/",
+        "outputPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/miladdarvishi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Shared/CleanArc.SharedKernel/CleanArc.SharedKernel.csproj": {
+                "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Shared/CleanArc.SharedKernel/CleanArc.SharedKernel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/miladdarvishi/.dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.CrossCutting/CleanArc.Infrastructure.CrossCutting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.CrossCutting/CleanArc.Infrastructure.CrossCutting.csproj",
+        "projectName": "CleanArc.Infrastructure.CrossCutting",
+        "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.CrossCutting/CleanArc.Infrastructure.CrossCutting.csproj",
+        "packagesPath": "/Users/miladdarvishi/.nuget/packages/",
+        "outputPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.CrossCutting/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/miladdarvishi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.Identity/CleanArc.Infrastructure.Identity.csproj": {
+                "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.Identity/CleanArc.Infrastructure.Identity.csproj"
+              },
+              "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.Persistence/CleanArc.Infrastructure.Persistence.csproj": {
+                "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.Persistence/CleanArc.Infrastructure.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Serilog.Enrichers.Span": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Serilog.Exceptions": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Serilog.Sinks.Elasticsearch": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Serilog.Sinks.MSSqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Serilog.Sinks.PeriodicBatching": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/miladdarvishi/.dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.Identity/CleanArc.Infrastructure.Identity.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.Identity/CleanArc.Infrastructure.Identity.csproj",
+        "projectName": "CleanArc.Infrastructure.Identity",
+        "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.Identity/CleanArc.Infrastructure.Identity.csproj",
+        "packagesPath": "/Users/miladdarvishi/.nuget/packages/",
+        "outputPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.Identity/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/miladdarvishi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Application/CleanArc.Application.csproj": {
+                "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Application/CleanArc.Application.csproj"
+              },
+              "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Domain/CleanArc.Domain.csproj": {
+                "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Domain/CleanArc.Domain.csproj"
+              },
+              "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.Persistence/CleanArc.Infrastructure.Persistence.csproj": {
+                "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.Persistence/CleanArc.Infrastructure.Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/miladdarvishi/.dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.Persistence/CleanArc.Infrastructure.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.Persistence/CleanArc.Infrastructure.Persistence.csproj",
+        "projectName": "CleanArc.Infrastructure.Persistence",
+        "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.Persistence/CleanArc.Infrastructure.Persistence.csproj",
+        "packagesPath": "/Users/miladdarvishi/.nuget/packages/",
+        "outputPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Infrastructure/CleanArc.Infrastructure.Persistence/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/miladdarvishi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Application/CleanArc.Application.csproj": {
+                "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Application/CleanArc.Application.csproj"
+              },
+              "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Domain/CleanArc.Domain.csproj": {
+                "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Core/CleanArc.Domain/CleanArc.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/miladdarvishi/.dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Shared/CleanArc.SharedKernel/CleanArc.SharedKernel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Shared/CleanArc.SharedKernel/CleanArc.SharedKernel.csproj",
+        "projectName": "CleanArc.SharedKernel",
+        "projectPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Shared/CleanArc.SharedKernel/CleanArc.SharedKernel.csproj",
+        "packagesPath": "/Users/miladdarvishi/.nuget/packages/",
+        "outputPath": "/Users/miladdarvishi/RiderProjects/Clean-Architecture-Template/src/Shared/CleanArc.SharedKernel/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/miladdarvishi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.10.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Pluralize.NET": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/Users/miladdarvishi/.dotnet/sdk/9.0.301/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

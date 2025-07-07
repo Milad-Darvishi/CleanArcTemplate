@@ -1,0 +1,3 @@
+obj/Debug/net9.0/ProtoModels/OrderGrpcServiceModels.cs \
+obj/Debug/net9.0/ProtoModels/OrderGrpcServiceModelsGrpc.cs: /Users/miladdarvishi/.nuget/packages/grpc.tools/2.66.0/build/native/include/google/protobuf/empty.proto\
+ ProtoModels/OrderGrpcServiceModels.proto
